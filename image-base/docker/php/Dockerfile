@@ -5,6 +5,10 @@ COPY php.ini /usr/local/etc/php/
 COPY 000-default.conf /etc/apache2/sites-available/
 COPY alias.conf /etc/apache2/mods-enabled/alias.conf
 
+# Headersモジュールの有効化
+RUN /bin/sh -c 'a2enmod headers'
+COPY security.conf /etc/apache2/conf-enabled/security.conf
+
 # intl Laravelバリデータ
 RUN apt-get update \
     && apt-get install -y vim zlib1g-dev libzip-dev mariadb-client libicu-dev unzip \
