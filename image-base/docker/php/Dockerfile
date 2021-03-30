@@ -5,6 +5,7 @@ COPY php.ini /usr/local/etc/php/
 COPY 000-default.conf /etc/apache2/sites-available/
 COPY alias.conf /etc/apache2/mods-enabled/alias.conf
 
+# intl Laravelバリデータ
 RUN apt-get update \
     && apt-get install -y vim zlib1g-dev libzip-dev mariadb-client libicu-dev unzip \
     && docker-php-ext-configure intl \
