@@ -1,2 +1,2 @@
 -- dump_dummy
-CREATE TABLE database.mydb (id int, name varchar(10));
+CREATE TABLE mydb (id int, name varchar(10));
