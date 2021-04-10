@@ -16,11 +16,11 @@ services:
     image: mysql:5.7
     container_name: db_sample
     environment: 
-      MYSQL_ROOT_PASSWORD: ${MYSQL_RPASS}
-      MYSQL_DATABASE: ${MYSQL_DB}
-      MYSQL_USER: ${MYSQL_USER}
-      MYSQL_PASSWORD: ${MYSQL_PASS}
-      TZ: ${DB_TZ}
+      MYSQL_ROOT_PASSWORD: $MYSQL_RPASS
+      MYSQL_DATABASE: $MYSQL_DB
+      MYSQL_USER: $MYSQL_USER
+      MYSQL_PASSWORD: $MYSQL_PASS
+      TZ: $DB_TZ
     command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
     volumes: 
       - ./docker/db/data:/var/lib/mysql
