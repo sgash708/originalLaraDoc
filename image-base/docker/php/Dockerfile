@@ -1,7 +1,7 @@
 FROM php:8.0-apache
 
 # 設定ファイル
-COPY php.ini /usr/local/etc/php/
+COPY php.ini /usr/local/etc/php/conf.d
 COPY 000-default.conf /etc/apache2/sites-available/
 COPY alias.conf /etc/apache2/mods-enabled/alias.conf
 
