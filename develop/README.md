@@ -8,5 +8,6 @@ $ cp .env.example .env
 
 # 構成
 * PHP8
-* apache2.4.1
+* Apache2.4.1
 * MySQL5.7
+* Xdebug
