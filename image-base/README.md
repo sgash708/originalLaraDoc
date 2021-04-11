@@ -4,5 +4,5 @@ base-imageでは、アプリケーションのbaseイメージを作成します
 
 # 構成
 * PHP8
-* apache2.4.1
+* Apache2.4.1
 * OPcache
