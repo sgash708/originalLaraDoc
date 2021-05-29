@@ -12,9 +12,13 @@
 $ composer create-project "laravel/laravel" .
 # もしくは
 $ laravel new hoge
+$ vi .env
+
+$ php artisan config:cache
+$ php artisan key:generate
 ```
 
 ```zsh
 % cd ../
-% cp -aT server/hoge server
+% cp -a server/hoge server
 ```
