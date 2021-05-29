@@ -13,9 +13,17 @@ $ composer create-project "laravel/laravel" .
 # もしくは
 $ laravel new hoge
 $ vi .env
+### ここから ###
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE="develop/.envのMYSQL_DB"
+DB_USERNAME="develop/.envのMYSQL_USER"
+DB_PASSWORD="develop/.envのMYSQL_PASS"
+### ここまで ###
 
-$ php artisan config:cache
 $ php artisan key:generate
+$ php artisan config:cache
 ```
 
 ```zsh
