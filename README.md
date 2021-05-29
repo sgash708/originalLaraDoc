@@ -10,4 +10,11 @@
 ```bash
 # Latest(ver8)
 $ composer create-project "laravel/laravel" .
+# もしくは
+$ laravel new hoge
+```
+
+```zsh
+% cd ../
+% cp -aT server/hoge server
 ```
