@@ -10,8 +10,13 @@
 ```bash
 # Latest(ver8)
 $ composer create-project "laravel/laravel" .
+
 # もしくは
-$ laravel new hoge
+# $ laravel new hoge
+# $ cp -a hoge/ .
+# $ rm -rf hoge/
+
+# プロジェクト作成後
 $ vi .env
 ### ここから ###
 DB_CONNECTION=mysql
